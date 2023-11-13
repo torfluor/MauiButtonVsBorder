@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiButtonVsBorder.MainPage">
+
+    <Grid RowDefinitions="*,44,*" ColumnDefinitions="*,122,122,*">
+    
+        <Border Grid.Row="1" Grid.Column="1" BackgroundColor="Transparent" Stroke="Black" StrokeThickness="1">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+            <Label Text="Border" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </Border>
+
+        <Button Grid.Row="1" Grid.Column="2" BorderColor="Black" TextColor="Black" BackgroundColor="Transparent" BorderWidth="1" Text="Button" />
+    
+    </Grid>
+    
+</ContentPage>
